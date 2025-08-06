@@ -1,0 +1,375 @@
+
+         /* Estilos para el botón flotante */
+    #back-to-top {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        width: 50px;
+        height: 50px;
+        background-color: #2A5C8B;
+        color: white;
+        border: none;
+        border-radius: 50%;
+        font-size: 1.5rem;
+        cursor: pointer;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        opacity: 0;
+        transition: all 0.3s;
+        z-index: 99;
+    }
+
+    #back-to-top:hover {
+        background-color: #1E456E;
+        transform: translateY(-3px);
+    }
+
+    #back-to-top.visible {
+        opacity: 1;
+    }
+        /* Reset y estilos generales */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #f9f9f9;
+            overflow-x: hidden;
+        }
+
+        /* Header */
+        header {
+            background-color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 5rem;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+            height: 100px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logo img {
+            height: 60px;
+        }
+
+        .logo-text h1 {
+            color: #2A5C8B;
+            font-size: 1.8rem;
+            line-height: 1.2;
+        }
+
+        .logo-text p {
+            color: #666;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 25px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #2A5C8B;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: all 0.3s;
+            padding: 6px 10px;
+            border-radius: 5px;
+        }
+
+        nav ul li a:hover {
+            color: white;
+            background-color: #2A5C8B;
+        }
+         header {
+        background-color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2rem 5rem; /* Aumenté el padding vertical */
+        box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+        height: 120px; /* Aumenté la altura */
+    }
+
+    .logo img {
+        height: 70px; /* Logo más grande */
+    }
+
+    .logo-text h1 {
+        font-size: 2rem; /* Texto más grande */
+    }
+
+    .logo-text p {
+        font-size: 1rem; /* Texto más grande */
+    }
+
+    nav ul li a {
+        font-size: 1.1rem; /* Viñetas más grandes */
+        padding: 8px 15px; /* Más espacio */
+    }
+
+        /* Carrusel */
+        .carousel-container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            padding: 1.5rem 0;
+            background-color: #f0f0f0;
+        }
+
+        .carousel {
+            width: 80%;
+            height: 300px;
+            overflow: hidden;
+            position: relative;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .carousel-inner {
+            display: flex;
+            transition: transform 0.5s ease;
+            height: 100%;
+        }
+
+        .carousel-item {
+            min-width: 100%;
+            height: 100%;
+        }
+
+        .carousel-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .carousel {
+    width: 80%;
+    height: 350px; /* Altura fija del contenedor */
+    overflow: hidden;
+}
+
+.carousel-item img {
+    width: 100%;  /* Se ajusta al ancho del contenedor */
+    height: 100%; /* Mantiene la altura del carrusel */
+    object-fit: cover; /* Recorta excedentes manteniendo proporciones */
+}
+        /* Secciones compactas */
+        .section {
+            padding: 3rem 0;
+        }
+
+        .section-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 2rem;
+            font-size: 2rem;
+            color: white;
+        }
+
+        /* Sección Qué es */
+        .about-section {
+            display: flex;
+            align-items: center;
+            gap: 3rem;
+        }
+
+        .about-content, .about-image {
+            flex: 1;
+        }
+p {
+  color: white;
+  text-align: justify;
+  font-size: larger;
+}
+
+        .about-image img {
+            width: 100%;
+            max-height: 350px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Sección Servicios dividida */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .service-card {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 1.5rem;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .service-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-top: 1rem;
+        }
+     .services-grid {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 1.5rem;
+}
+
+    .service-card {
+        min-width: 220px; /* Ancho mínimo para cada card */
+    }
+
+    /* Para móviles (opcional) */
+    @media (max-width: 1200px) {
+        .services-grid {
+            grid-template-columns: repeat(5, 220px); /* Tamaño fijo */
+            justify-content: start;
+        }
+    }
+
+        /* Sección Visión/Misión */
+        .vision-mission {
+            display: flex;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .vision, .mission {
+            flex: 1;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 1.5rem;
+            border-radius: 10px;
+        }
+
+        /* Formulario centrado */
+        .contact-section {
+            text-align: center;
+        }
+ .vision-mission-values {
+        display: flex;
+        gap: 2rem;
+        align-items: stretch;
+    }
+    
+    .vision, .mission, .values {
+        flex: 1;
+        background: rgba(255, 255, 255, 0.1);
+        padding: 1.5rem;
+        border-radius: 10px;
+    }
+    
+ 
+        .contact-title {
+            color: #2A5C8B !important;
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+            text-align: left;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: #333;
+            font-weight: 600;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.8rem;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            font-size: 1rem;
+        }
+
+        .submit-btn {
+            background-color: #2A5C8B;
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            font-size: 1rem;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s;
+            width: 100%;
+        }
+
+        /* Colores */
+        .blue-bg {
+            background-color: #a48449;
+        }
+
+        .pink-bg {
+            background-color: #6D8B3A;
+        }
+
+        .green-bg {
+            background-color: #3A5A8B;
+        }
+
+        .white-bg {
+            background-color: white;
+        }
+
+        /* Footer */
+        footer {
+            background-color: white;
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0 -2px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .social-icons {
+            margin: 1.5rem 0;
+               text-align: center;
+        }
+
+        .social-icons a {
+            color: #2A5C8B;
+            margin: 0 12px;
+            font-size: 1.5rem;
+            transition: all 0.3s;
+               text-align: center;
+        }
+
+        footer p {
+            margin-bottom: 0.5rem;
+            color: #666;
+               text-align: center;
+        }
